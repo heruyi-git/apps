@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pool>
+<!-- more dataSouce config jta test-->
+<pool load="hh">
+	<dataSource name="hh" type="org.uyi.h.dao.pool.DbcpConnectionPool">
+		<dirverClassName>
+			oracle.jdbc.driver.OracleDriver
+		</dirverClassName>
+		<url>jdbc:oracle:thin:@192.168.2.50:1521:mbophz</url>
+		<username>ipiqxt</username>
+		<password>edfghji74569</password>
+		<initialSize>1</initialSize>
+		<!-- 高并发maxActive=maxIdle=20 -->
+		<maxActive>500</maxActive>
+		<maxIdle>500</maxIdle>
+		<!-- 高并发此处配置和minIdle=initialSize -->
+		<minIdle>1</minIdle>
+		<maxWait>30000</maxWait>
+		<testWhileIdle>true</testWhileIdle>
+		<timeBetweenEvictionRunsMillis>360000</timeBetweenEvictionRunsMillis>
+		<minEvictableIdleTimeMillis>1800000</minEvictableIdleTimeMillis>
+		<!-- 高并发numTestsPerEvictionRun=maxIdle -->
+		<numTestsPerEvictionRun>500</numTestsPerEvictionRun>
+		<showSql>true</showSql>
+	</dataSource>
+	
+	<dataSource name="sim" type="org.uyi.h.dao.pool.AtomikosConnectionPool">
+		<dirverClassName>com.mysql.jdbc.Driver</dirverClassName>
+		<url>jdbc:mysql://127.0.0.1:3306/sim?useUnicode=true&amp;characterEncoding=UTF-8</url>
+		<username>root</username>
+		<password>123456</password>
+		<!-- atomikos oracle.jdbc.xa.client.OracleXADataSource -->
+		<xaDataSourceClassName>com.mysql.jdbc.jdbc2.optional.MysqlXADataSource</xaDataSourceClassName>
+		<minPoolSize>2</minPoolSize>
+		<maxPoolSize>50</maxPoolSize>
+		<testQuery>select 1</testQuery>
+		<showSql>true</showSql>
+	</dataSource>
+	
+	<dataSource name="h" type="org.uyi.h.dao.pool.AtomikosConnectionPool">
+		<dirverClassName>com.mysql.jdbc.Driver</dirverClassName>
+		<url>jdbc:mysql://127.0.0.1:3306/h?useUnicode=true&amp;characterEncoding=UTF-8</url>
+		<username>root</username>
+		<password>123456</password>
+		<!-- atomikos oracle.jdbc.xa.client.OracleXADataSource -->
+		<xaDataSourceClassName>com.mysql.jdbc.jdbc2.optional.MysqlXADataSource</xaDataSourceClassName>
+		<minPoolSize>2</minPoolSize>
+		<maxPoolSize>50</maxPoolSize>
+		<testQuery>select 1</testQuery>
+		<showSql>true</showSql>
+	</dataSource>
+</pool>

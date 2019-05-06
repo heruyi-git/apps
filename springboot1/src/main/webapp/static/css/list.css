@@ -1,0 +1,44 @@
+body{ COLOR: #231312; background:#ffffff;  font-family:Arial,΢���ź�,Verdana; font-size:12px; color:#000;}
+.mainbody{margin:1px; padding-left:0px; list-style:none;border:1px solid #ccc;}
+form{padding:1px;margin:0px;background:#FCFDFC;}
+#conmaina h1{margin-top:5px; padding-left:0px;FONT-FAMILY: Courier New;height:20px; line-height:20px; text-indent:10px; font-size:13px;color:#002233; text-indent:1%; }
+
+#table_search{height:43px;text-indent:10px;background-image:url('../images/searchbg.jpg')}
+#table_search td{text-align: left;vertical-align: middle;COLOR: #231312;FONT-SIZE: 12px;border: solid 0px bad6ee;border-width: 0 0px 0px 0px; }
+#table_list {background:#ffffff; COLOR: #231312;FONT-FAMILY: Courier New;FONT-SIZE: 12px;border: solid 0px bad6ee;border-width: 0 2px 0px 2px; margin:1px;BORDER: 1px #bad6ec solid; }
+#table_list th{background:#f1f6ff;text-align:center; border-width:1px;border-style: solid;border-color:  #bad6ec ;border-collapse��collapse; border-width: 1 1px 1px 0; }
+#table_list td{ text-align:center;border:1px #bad6ec solid;line-height: 22px;border-collapse��collapse;  border-width: 0 1px 1px 0; }
+
+.btn{ width:50px; height:24px;  cursor: pointer;border:1px solid #858585; background:#EAF0EE;-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;}
+.btn2{ width:75px; height:24px;  cursor: pointer;border:1px solid #858585; background:#EAF0EE;-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;}
+.btn3{ width:100px; height:24px;  cursor: pointer;border:1px solid #858585; background:#EAF0EE;-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;}
+.a_search{ display:inline-block; line-height:24px; height:24px; border:1px solid #858585; background:#b9b9b9;}
+.page{  FONT-FAMILY: Courier New;FONT-SIZE: 12px; padding: 5px; color: #000000}
+.input1{padding: 4px;
+	/*border: 2px solid #e0e0e0;*/
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;}
+.input1:focus {
+	outline: none;
+}
+.select{
+	width: 160px;
+	height : 25px;
+	/*border: 2px solid #e0e0e0;*/
+	border-radius: 10px;
+	FONT-FAMILY: Courier New;
+}
+select:focus {
+	outline: none;
+}
+.select2{
+	width: 120px;
+	height : 20px;
+}

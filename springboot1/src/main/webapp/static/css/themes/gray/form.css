@@ -1,0 +1,257 @@
+@charset "utf-8";
+*{ margin:0px; padding-left:0; list-style:none; }
+body{ COLOR: #231312; background:#ffffff;  font-family:Arial,微软雅黑,Verdana; font-size:12px; color:#000;}
+form{padding:0px;margin:0px;background:gray;}
+.mainbody{border:1px solid #ccc;margin:0px 1px 0 3px;height: 100%;}
+#conmaina h1{FONT-FAMILY: Courier New;height:22px; line-height:22px; text-indent:10px; font-size:13px;color:#333aff; text-indent:1%; font-weight: bold;}
+#conmaina h2{padding-top:10px;height:22px; line-height:22px; text-indent:10px; font-size:13px;color:#858585; text-indent:1%; font-weight: normal;}
+
+/** table add **/
+#table_add{background:#ffffff; COLOR: #231312;FONT-FAMILY: Courier New;FONT-SIZE: 12px;border: solid 0px bad6ee;border-width: 0 2px 0px 2px; }
+#table_button{text-align: left;vertical-align: middle;}
+.btn{ width:50px; height:24px;  cursor: pointer;border:1px solid #858585; background:#EAF0EE;-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;}
+.a_search{ display:inline-block; line-height:24px; height:24px; border:1px solid #858585; background:#b9b9b9;}
+.div_cloumn{  width: 950px;float: none;}
+.label_cloumn{  width: 100px;display:block;float: left;}
+.text_cloumn{width: 830px;display:block;float: left;}
+.label_cloumn2{  width: 80px;border:1px #bad6ec solid;line-height: 32px;border-collapse：collapse;  border-width: 1px 1px 1px 1px;padding-left: 5px;background-color: #f1f6ff;}
+.text_cloumn2{width: 205px;border:1px #bad6ec solid;line-height: 32px;border-collapse：collapse;  border-width: 1px 1px 1px 0;padding-left: 7px;}
+
+ /*** input elements ***/
+.input1{
+	/*border: 2px solid #e0e0e0;*/
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;}
+.input1:focus {
+	border: 1px solid #B7D4EA;
+	box-shadow: 0 0 8px #B7D4EA;
+}
+.input2{
+	/*border: 2px solid #e0e0e0;*/
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width: 80px;
+}
+.input2:focus {
+	outline: none;
+}
+.select{
+	width: 155px;
+	height : 20px;
+	/*border: 2px solid #e0e0e0;*/
+	border-radius: 10px;
+	FONT-FAMILY: Courier New;
+}
+select:focus {
+	outline: none;
+}
+.select2{
+	width: 120px;
+	height : 20px;
+}
+
+
+/* CSS Document */
+#fm {
+	margin: 0;
+	padding: 5px 20px;
+}
+
+.ftitle {
+	font-size: 14px;
+	padding: 5px 0;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.fitem {
+	margin-bottom: 5px;
+}
+
+.fitem label {
+	display: inline-block;
+	width: 80px;
+}
+
+.fitem input {
+	width: 160px;
+}
+
+
+
+
+/* css3*/
+html {
+	color: #000;
+	background: #FFF
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td
+	{
+	margin: 0;
+	padding: 0
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+fieldset,img {
+	border: 0
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style: normal;
+	font-weight: normal
+}
+
+ol,ul {
+	list-style: none
+}
+
+caption,th {
+	text-align: left
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal
+}
+
+q:before,q:after {
+	content: ''
+}
+
+abbr,acronym {
+	border: 0;
+	font-variant: normal
+}
+
+sup {
+	vertical-align: text-top
+}
+
+sub {
+	vertical-align: text-bottom
+}
+
+input,textarea,select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit
+}
+
+input,textarea,select { *
+	font-size: 100%
+}
+
+legend {
+	color: #000
+}
+
+.wrapper {
+	margin: 140px auto;
+	width: 884px;
+}
+
+.formBox {
+	background-color: #FEFEFE;
+	border: 1px solid #BfD6E1;
+	border-radius: 5px;
+	color: #444;
+	font: 14px 'Microsoft YaHei', '微软雅黑';
+	margin: 0 auto;
+	width: 'auto'
+}
+
+.formBox .formBoxCenter {
+	border-bottom: 1px solid #DDE0E8;
+	padding: 24px;
+}
+
+.formBox .formBoxCenter p {
+	margin-bottom: 10px
+}
+
+.formBox .formBoxButtons {
+	background-color: #F0F4F6;
+	border-top: 1px solid #FFF;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	line-height: 28px;
+	overflow: hidden;
+	padding: 20px 24px;
+	vertical-align: center;
+}
+
+.formBox .formInput {
+	border: 1px solid #D2D9dC;
+	border-radius: 2px;
+	color: #444;
+	font: 12px 'Microsoft YaHei', '微软雅黑';
+	padding: 8px 14px;
+	margin-bottom: 8px;
+	width: 'auto';
+}
+
+.formBox .formInput:FOCUS {
+	border: 1px solid #B7D4EA;
+	box-shadow: 0 0 8px #B7D4EA;
+}
+
+.formBox .formBtn {
+	background-image: -moz-linear-gradient(to bottom, #B5DEF2, #85CFEE);
+	border: 1px solid #98CCE7;
+	border-radius: 20px;
+	box-shadow: inset rgba(255, 255, 255, 0.6) 0 1px 1px, rgba(0, 0, 0, 0.1)
+		0 1px 1px;
+	color: #FFF;
+	cursor: pointer;
+	float: right;
+	font: bold 13px Arial;
+	padding: 5px 14px;
+}
+
+.formBox .formBtn:HOVER {
+	background-image: -moz-linear-gradient(to top, #B5DEF2, #85CFEE);
+}
+
+.formBox a.forgetLink {
+	color: #ABABAB;
+	cursor: pointer;
+	float: right;
+	font: 11px/ 20px Arial;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.formBox a.forgetLink:HOVER {
+	text-decoration: underline;
+}
+
+.formBox input#remember {
+	vertical-align: middle;
+}
+
+.formBox label[for="remember"] {
+	font: 11px Arial;
+}
+.formBoxCenter label{
+	width:80px;
+	text-align:left;
+	padding-right: 20px;
+}
+.formBoxCenter .label2{
+	width:180px;
+	text-align:left;
+	padding-right: 20px;
+}
+
+
+/*swithbutton***********************************/
+

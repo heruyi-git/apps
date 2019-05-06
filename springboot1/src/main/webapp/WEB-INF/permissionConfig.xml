@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE permissionConfig:configuration >
+<permissionConfig>
+	<processClass class="org.uyi.h.web.controller.mvc.Permission" />
+	<loginPage page="/login.jsp" />
+	<warningPage page="/WEB-INF/jsp/warning.jsp" />
+	<warningMessage>
+	你无权访问该页！
+	</warningMessage>
+	<ignoredPages>
+		<list>
+			<!--
+			<page path="/services/*"/>
+			<page path="/js/*" />
+			<page path="/css/*" />
+			<page path="/images/*" />
+			<page path="/files/*" />
+			<page path="/admin/login.do" />
+			<page path="/admin/img.jsp" />
+			-->
+		</list>
+	</ignoredPages>
+</permissionConfig>

@@ -1,0 +1,394 @@
+
+/*-------------------------------------------*/
+INPUT.add{
+	background:#FFFFFF url(../images/css/css_add.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.accept{
+	background:#FFFFFF url(../images/css/css_accept.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.alert{
+	background:#FFFFFF url(../images/css/css_alert.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.attach{
+	background:#FFFFFF url(../images/css/css_attach.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.attach2{
+	background:#FFFFFF url(../images/css/css_attach2.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.back{
+	background:#FFFFFF url(../images/css/css_back.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.branch{
+	background:#FFFFFF url(../images/css/css_branch.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.bug{
+	background:#FFFFFF url(../images/css/css_bug.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.button1{
+	background:#FFFFFF url(../images/css/css_button1.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.button2{
+	background:#FFFFFF url(../images/css/css_button2.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:50px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.button3{
+	background:#FFFFFF url(../images/css/css_button3.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.calendar{
+	background:#FFFFFF url(../images/css/css_calendar.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.cancel{
+	background:#FFFFFF url(../images/css/css_cancel.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.chart{
+	background:#FFFFFF url(../images/css/css_chart.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.cog{
+	background:#FFFFFF url(../images/css/css_cog.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.coin{
+	background:#FFFFFF url(../images/css/css_coin.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.comment{
+	background:#FFFFFF url(../images/css/css_comment.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.connect{
+	background:#FFFFFF url(../images/css/css_connect.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.database{
+	background:#FFFFFF url(../images/css/css_database.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.delete{
+	background:#FFFFFF url(../images/css/css_delete.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.disconnect{
+	background:#FFFFFF url(../images/css/css_disconnect.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.divide{
+	background:#FFFFFF url(../images/css/css_divide.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.download{
+	background:#FFFFFF url(../images/css/css_download.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.edit{
+	background:#FFFFFF url(../images/css/css_edit.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.email{
+	background:#FFFFFF url(../images/css/css_email.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.export{
+	background:#FFFFFF url(../images/css/css_export.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none; 
+	CURSOR: hand;
+}
+INPUT.find{
+	background:#FFFFFF url(../images/css/css_find.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.find_short{
+	background:#FFFFFF url(../images/css/css_find_short.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:35px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.folder{
+	background:#FFFFFF url(../images/css/css_folder.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.hot{
+	background:#FFFFFF url(../images/css/css_hot.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.info{
+	background:#FFFFFF url(../images/css/css_info.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.join{
+	background:#FFFFFF url(../images/css/css_join.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.key{
+	background:#FFFFFF url(../images/css/css_key.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.last{
+	background:#FFFFFF url(../images/css/css_last.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.link{
+	background:#FFFFFF url(../images/css/css_link.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.lock{
+	background:#FFFFFF url(../images/css/css_lock.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.money{
+	background:#FFFFFF url(../images/css/css_money.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.next{
+	background:#FFFFFF url(../images/css/css_next.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.ok{
+	background:#FFFFFF url(../images/css/css_ok.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.pie{
+	background:#FFFFFF url(../images/css/css_pie.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.print{
+	background:#FFFFFF url(../images/css/css_print.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.refresh{
+	background:#FFFFFF url(../images/css/css_refresh.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.report{
+	background:#FFFFFF url(../images/css/css_report.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.return{
+	background:#FFFFFF url(../images/css/css_return.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.rmb{
+	background:#FFFFFF url(../images/css/css_rmb.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.tag{
+	background:#FFFFFF url(../images/css/css_tag.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.tip{
+	background:#FFFFFF url(../images/css/css_tip.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.user{
+	background:#FFFFFF url(../images/css/css_user.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}
+INPUT.vcard{
+	background:#FFFFFF url(../images/css/css_vcard.gif) no-repeat;
+	font-size:12px;
+	height:23px;
+	width:87px;
+	border-style: none;
+	CURSOR: hand;
+}

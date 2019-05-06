@@ -1,0 +1,119 @@
+
+
+
+.treemenu ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.treemenu li {
+    line-height: 24px;
+    list-style-type: none;
+    list-style-image: none;
+    list-style-position: outside;
+    margin: 0;
+    padding: 0px 0 1px 9px;
+}
+
+.treemenu li a{
+  text-decoration: none;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  padding: 1px;
+  cursor: pointer;
+  outline: none;
+  vertical-align: middle;
+  width:99%;
+  text-align: left;
+  color: #444;
+}
+
+.treemenu ul li a:hover{ 
+  background: -webkit-linear-gradient(top,#ffffff 0,#eeeeee 100%);
+  background: -moz-linear-gradient(top,#ffffff 0,#eeeeee 100%);
+  background: -o-linear-gradient(top,#ffffff 0,#eeeeee 100%);
+  background: linear-gradient(to bottom,#ffffff 0,#eeeeee 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#eeeeee,GradientType=0);
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  padding: 0;
+  background: #eaf2ff;
+  color: #000000;
+  border: 1px solid #b7d2ff;
+  font-weight: bold;
+  font-size-adjust: inherit;
+}
+.treemenu ul li .selected{ 
+  background: -webkit-linear-gradient(top,#ffffff 0,#eeeeee 100%);
+  background: -moz-linear-gradient(top,#ffffff 0,#eeeeee 100%);
+  background: -o-linear-gradient(top,#ffffff 0,#eeeeee 100%);
+  background: linear-gradient(to bottom,#ffffff 0,#eeeeee 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#eeeeee,GradientType=0);
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  padding: 0;
+  background: #eaf2ff;
+  color: #000000;
+  border: 1px solid #b7d2ff;
+}
+
+.treemenu-left1 {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+.treemenu-text1 {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  line-height: 24px;
+  font-size: 12px;
+  padding: 0;
+  margin: 0 4px;
+}
+.treemenu-icon1 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  font-size: 1px;
+}
+
+.treemenu-icon-left1 .treemenu-text1 {
+  margin: 0 4px 0 24px;
+}
+.treemenu-icon-left1 .treemenu-icon1 {
+  left: 4px;
+}
+
+.tree-node-open {
+	margin-left: 0px;
+    background: url(../images/treeMenu/arrow-dn-sharp.gif) no-repeat scroll -2px 8px;
+    
+    
+}
+
+.tree-node-close {
+	margin-left: 0px;
+    background: url(../images/treeMenu/arrow-rit-sharp.gif) no-repeat scroll -2px 8px;
+}
+
+
+.trigger {
+    cursor: pointer;
+    display: inline;
+    height: 24px;
+    width: 16px;
+    margin-left: -16px;
+}

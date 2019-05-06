@@ -1,0 +1,60 @@
+body{ COLOR: #231312; background:#ffffff;  font-family:Arial,΢���ź�,Verdana; font-size:12px; color:#000;}
+form{padding:0px;margin:0px;background:#FCFDFC;}
+.mainbody{border:1px solid #ccc;margin:0px 1px 0 3px;height: 100%;}
+#conmaina h1{FONT-FAMILY: Courier New;height:22px; line-height:22px; text-indent:10px; font-size:13px;color:#333aff; text-indent:1%; font-weight: bold;}
+#conmaina h2{padding-top:10px;height:22px; line-height:22px; text-indent:10px; font-size:13px;color:#858585; text-indent:1%; font-weight: normal;}
+
+/** table add **/
+#table_add{background:#ffffff; COLOR: #231312;FONT-FAMILY: Courier New;FONT-SIZE: 12px;border: solid 0px bad6ee;border-width: 0 2px 0px 2px; }
+#table_button{text-align: left;vertical-align: middle;}
+.btn{ width:50px; height:24px;  cursor: pointer;border:1px solid #858585; background:#EAF0EE;-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;}
+.a_search{ display:inline-block; line-height:24px; height:24px; border:1px solid #858585; background:#b9b9b9;}
+.label_cloumn{  width: 85px;border:1px #bad6ec solid;line-height: 32px;border-collapse��collapse;  border-width: 0px 1px 0px 1px;float: left;padding-left: 5px;background-color: #f1f6ff;}
+.text_cloumn{text-align:center;width: 196px;border:1px #bad6ec solid;height:27px;line-height: 27px;border-collapse��collapse;  border-width: 0px 1px 0px 0;float: left;padding-left: 0px;}
+.line_clounm{width:100%; border-top:1px silver dashed;border-color:#99BBE8;float: left;}
+ /*** input elements ***/
+.input1{
+	/*border: 2px solid #e0e0e0;*/
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;}
+.input1:focus {
+	outline: none;
+}
+.input2{
+	/*border: 2px solid #e0e0e0;*/
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width: 80px;
+}
+.input2:focus {
+	outline: none;
+}
+.select{
+	width: 155px;
+	height : 20px;
+	/*border: 2px solid #e0e0e0;*/
+	border-radius: 10px;
+	FONT-FAMILY: Courier New;
+}
+select:focus {
+	outline: none;
+}
+.select2{
+	width: 120px;
+	height : 20px;
+}
+
+.textbox2{
+	height:23px;
+	margin-top:2px;
+}
+
+input:disabled{
+    border: 1px solid #DDD;
+    background-color: #F5F5F5;
+    color:#ACA899;
+}

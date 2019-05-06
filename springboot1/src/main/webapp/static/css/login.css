@@ -1,0 +1,495 @@
+* {
+	font-size:12px;
+}
+html, body {
+	margin:0;
+	padding:1;
+	height:100%;
+	font-family: \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, "Verdana", "Times New Roman";
+	OVERFLOW:auto;
+	OVERFLOW-X:HIDDEN;
+	OVERFLOW-Y:HIDDEN;
+}
+body, div, span, ul, li, img, textarea, input, select, form, a, table, tr, td, th {
+	font-size:12px;
+	font-family: \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, "Verdana", "Times New Roman";
+	margin:0; /*ͳһul*/
+	padding:0px;
+	list-style-type:none;
+}
+#logindiv {
+	width:100%;
+	height:100%;
+	background-image:url(../images/login/bg_bottom1.jpg);
+	background-repeat:repeat-x;
+	background-position:bottom;
+}
+#logindiv1 {
+	background-image:url(../images/login/bg_top1.gif);
+	background-repeat:repeat-x;
+	height:47px;
+	text-align:right;
+	vertical-align:middle;
+	line-height:47px;
+}
+#logindiv2 {
+	position:relative;
+	height:490px;
+	width:100%px;
+	text-align:center;
+}
+
+
+#indexTop{ height:100px;}
+.tbMain{ width:100%;}
+#tdLeftNav{width:140px; border-right:1px solid #2E522E;} 
+#tdMidLine{ 
+	width:6px; 
+	text-align:center; 
+	vertical-align:middle;
+	cursor:hand;
+}
+.tdCenterMain{ padding-left:2px;}
+#tdLeftLine{background:#FFF url(../21cngreen/left_line_bg.gif) repeat-y; width:6px}
+#tdRigLine{background:#FFF url(../21cngreen/right_line_bg.gif) repeat-y; width:9px}
+
+
+.divTop {position:relative; overflow:none; height:100px; overflow:inherit;}
+.divTopNav1 {
+	font-size:12px;
+	position:absolute;
+	top:1px;
+	left:6px;
+	width:230px;
+	height:20px;
+	padding-top:5px;
+	padding-left:1px;
+}
+	.divTopNav1 a{
+		text-decoration:none;
+		color:#000000;
+	}
+	.divTopNav1 a:hover{text-decoration:underline;}
+.divTopNav1_1 {
+	font-size:12px;
+	position:absolute;
+	top:1px;
+	left:240px;
+	width:420px;
+	height:20px;
+	padding-top:5px;
+	padding-left:1px;
+}
+	.divTopNav1_1 a{
+		color:#000000;
+		text-decoration:none;
+	}
+	.divTopNav1_1 a:hover{text-decoration:underline;}
+.divTopNav2{
+	position:relative;
+	top:25px;
+	height:50px;
+	overflow:inherit;
+	background-image:url(../images/index/FISLogoBG1.jpg);
+}
+.divTopNav3{
+	position:absolute;
+	top:19px;
+	right:0px;
+	height:56px;
+	width:310px;
+	overflow:inherit;
+	background-image:url(../images/index/FISLogo2.jpg);
+	background-repeat:no-repeat;
+	font-size:12px;
+	padding-top:6px;
+}
+	.divTopNav3 ul{list-style-type:none;margin:4px 0 0 5px}
+	.divTopNav3 li{height:20px;padding-top:1px; padding-left:15px;}
+.divTopNav4 {
+	position:relative;
+	top:25px;
+	height:24px;
+	line-height:24px;
+	vertical-align:bottom;
+	font-size:12px;
+	color:#FFFFFF;
+	overflow:hidden;
+	background-color:#2E522E;
+}
+	.divTopNav4 a{
+		font-size:12px;
+		display:block;
+		width:120px;
+		height:24px;
+		float:left;
+		position:relative;
+		text-decoration:none;
+		text-align:center;
+		line-height:24px;
+		overflow: hidden;
+		letter-spacing:2px;
+		vertical-align:middle;
+	}
+	.divTopNav4 a:hover {text-decoration:none}
+		a.OnClickBtn {background-image:url(../images/index/FISNav4BG3.jpg); background-repeat:repeat-x; color:#000000;}
+		a.nOnClickBtn {background-image:url(../images/index/FISNav4BG2.jpg); background-repeat:repeat-x; color:#FFFFFF;}
+			a.nOnClickBtn:hover {background-image:url(../images/index/FISNav4BG1.jpg); background-repeat:repeat-x; color:#000000;}
+.divTopNav4_2 {
+	position:absolute;
+	top:0px;
+	right:3px;
+	width:350px;
+	height:24px;
+	overflow:visible;
+	background-color:#2E522E;
+	text-align:center;
+	padding-right:10px;
+	line-height:24px;
+	font-size:12px;
+	color:#FFFFFF;
+}
+
+.tit_search {
+	width:175px;
+	height:18px;
+	border:0 solid #cccccc;
+	font-size:11px;
+	padding:2px;
+	font-family:Verdana, Tahoma, ����;
+}
+.tit_searchbtn {
+	background-image:url(../images/index/FISearchBTN.gif); 
+	background-repeat:no-repeat;
+	width:64px;
+	height:18px;
+	border:0 solid #cccccc; 
+	font-size:12px;
+}
+
+INPUT.loginbtn {
+	background-image:url(../images/login/indexbtnsubmit.gif);
+	height:42px; 
+	width:85px; 
+	cursor:pointer; 
+	border:none;
+}
+
+INPUT.logininput {
+	font-size:9pt;
+	height:15pt;
+	border:1px #000000 solid;
+	color: #333333;
+	font-weight: bold;
+	padding:2px;
+}
+
+.font12{
+	font-size:12px;
+}
+
+.font12white{
+	font-size:12px;
+	color:#FFFFFF;
+	text-decoration:none;
+	font-style: normal;
+}
+.font12white:hover{
+	text-decoration:none;
+}
+
+.font12gray{
+	font-size:12px;
+	color:#787878;
+	text-decoration:none;
+	font-style: normal;
+}
+.font12gray:hover{
+	text-decoration:none;
+}
+
+.font12black{
+	font-size:12px;
+	color:#000000;
+	text-decoration:none;
+	font-style: normal;
+}
+.font12black:hover{
+	text-decoration:underline;
+}
+
+.font12red{
+	color:#FF0000;
+	font-stretch:normal;
+	font-size:12px;
+	text-decoration:none;
+}
+.font12red:hover{
+	text-decoration:underline;
+}
+
+.font12black_bold{
+	font-size:12px;
+	color:#000000;
+	text-decoration:none;
+	font-style: normal;
+	font-weight: bold;
+}
+
+/*----------- new login 20130523 ---------------*/
+#loginTop {
+	margin:0 auto;
+	height:76px;
+	background:url('../images/login/loginbg_head.png') 0 0 repeat-x;
+}
+#loginTop_bg {
+	height:76px;
+	background:url('../images/login/head_bg_center.png') 0 0 no-repeat;
+}
+#loginTop_logo {
+	width:510px;
+	height:76px;
+	background:url('../images/login/logo_login.png') 0 0 no-repeat;
+}
+
+#loginTop_link {
+	color:#FFFFFF;
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+#loginTop_link a {
+	padding:0;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#loginCust {
+	width:322px;
+	height:45px;
+	margin:20px auto 10px 50px;
+	background:url(../images/login/logo322x45.gif) 0 0 no-repeat;
+}
+#loginMain {
+	position:relative;
+	margin:20px auto;
+	height:510px;
+	background: url(../images/login/95.jpg) top center no-repeat;
+	/*background:url(../images/login/login_banner.jpg) 0 0 no-repeat;*/
+}
+#loginFrame {
+	position:absolute;
+	top:20px;
+	right:220px;
+	height:360px;
+	width:330px;
+	background-color:#F4F6F8;
+	/*border:#0000FF 1px solid;*/
+}
+.LoginInput {
+	font-family:Verdana;
+	font-weight:bold;
+	border:#77B7DE 1px solid;
+	width:170px;
+	font-size:14px;
+	background:url(../images/login/bg_input.gif) repeat-x;
+	padding:5px 3px
+}
+.LoginInputOn {
+	font-family:Verdana;
+	font-weight:bold;
+	border:#3399CC 1px solid;
+	width:170px;
+	font-size:14px;
+	background:#EDFAFF;
+	padding:5px 3px
+}
+.CodeInput {
+	font-family:Verdana;
+	font-weight:bold;
+	border:#77B7DE 1px solid;
+	width:170px;
+	font-size:14px;
+	background:url(../images/login/bg_input.gif) repeat-x;
+	padding:5px 3px
+}
+.ButtonInput, .ButtonInput2, .ButtonInput3 {
+	display: block;
+	color:#FFF;
+	font-weight:bold;
+	font-size:14px;
+	width:110px;
+	border:0px;
+	height:38px;
+	background:url(../images/login/bg_button.gif) no-repeat;
+	cursor:hand;
+	cursor:pointer!important;
+	line-height:38px;
+}
+.ButtonInput2 {background:url(../images/login/bg_button.gif) no-repeat;background-position: 0px -43px;}
+.ButtonInput3 {background:url(../images/login/bg_button.gif) no-repeat;background-position: 0px -86px;}
+
+
+
+
+
+/* css3*/
+html {
+	color: #000;
+	background: #FFF
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td
+	{
+	margin: 0;
+	padding: 0
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+fieldset,img {
+	border: 0
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style: normal;
+	font-weight: normal
+}
+
+ol,ul {
+	list-style: none
+}
+
+caption,th {
+	text-align: left
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal
+}
+
+q:before,q:after {
+	content: ''
+}
+
+abbr,acronym {
+	border: 0;
+	font-variant: normal
+}
+
+sup {
+	vertical-align: text-top
+}
+
+sub {
+	vertical-align: text-bottom
+}
+
+input,textarea,select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit
+}
+
+input,textarea,select { *
+	font-size: 100%
+}
+
+legend {
+	color: #000
+}
+
+html {
+	background-color: #E9EEF0
+}
+
+.wrapper {
+	margin: 140px auto;
+	width: 884px;
+}
+
+.loginBox {
+	background-color: #FEFEFE;
+	border: 1px solid #BfD6E1;
+	border-radius: 5px;
+	color: #444;
+	font: 14px 'Microsoft YaHei', '微软雅黑';
+	margin: 0 auto;
+	width: 388px
+}
+
+.loginBox .loginBoxCenter {
+	border-bottom: 1px solid #DDE0E8;
+	padding: 24px;
+}
+
+.loginBox .loginBoxCenter p {
+	margin-bottom: 10px
+}
+
+.loginBox .loginBoxButtons {
+	background-color: #F0F4F6;
+	border-top: 1px solid #FFF;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	line-height: 28px;
+	overflow: hidden;
+	padding: 20px 24px;
+	vertical-align: center;
+}
+
+.loginBox .loginInput {
+	border: 1px solid #D2D9dC;
+	border-radius: 2px;
+	color: #444;
+	font: 12px 'Microsoft YaHei', '微软雅黑';
+	padding: 8px 14px;
+	margin-bottom: 8px;
+	width: 310px;
+}
+
+.loginBox .loginInput:FOCUS {
+	border: 1px solid #B7D4EA;
+	box-shadow: 0 0 8px #B7D4EA;
+}
+
+.loginBox .loginBtn {
+	background-image: -moz-linear-gradient(to bottom, #B5DEF2, #85CFEE);
+	border: 1px solid #98CCE7;
+	border-radius: 20px;
+	box-shadow: inset rgba(255, 255, 255, 0.6) 0 1px 1px, rgba(0, 0, 0, 0.1)
+		0 1px 1px;
+	color: #FFF;
+	cursor: pointer;
+	float: right;
+	font: bold 13px Arial;
+	padding: 5px 14px;
+}
+
+.loginBox .loginBtn:HOVER {
+	background-image: -moz-linear-gradient(to top, #B5DEF2, #85CFEE);
+}
+
+.loginBox a.forgetLink {
+	color: #ABABAB;
+	cursor: pointer;
+	float: right;
+	font: 11px/ 20px Arial;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.loginBox a.forgetLink:HOVER {
+	text-decoration: underline;
+}
+
+.loginBox input#remember {
+	vertical-align: middle;
+}
+
+.loginBox label[for="remember"] {
+	font: 11px Arial;
+}

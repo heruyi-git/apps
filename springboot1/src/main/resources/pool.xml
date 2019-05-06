@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pool>
+<!-- more dataSouce config, dataSource name if oracle please use username-->
+<pool load="h">
+
+	<dataSource name="h" type="org.uyi.h.dao.pool.DbcpConnectionPool">
+		<dirverClassName>com.mysql.cj.jdbc.Driver</dirverClassName>
+		<url>
+			jdbc:mysql://127.0.0.1:3306/h?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC&amp;useSSL=false
+		</url>
+		<username>root</username>
+		<password>123456</password>
+		<initialSize>1</initialSize>
+		<!-- 高并发maxActive=maxIdle=20 -->
+		<maxActive>500</maxActive>
+		<maxIdle>500</maxIdle>
+		<!-- 高并发此处配置和minIdle=initialSize -->
+		<minIdle>1</minIdle>
+		<maxWait>30000</maxWait>
+		<testWhileIdle>true</testWhileIdle>
+		<timeBetweenEvictionRunsMillis>360000</timeBetweenEvictionRunsMillis>
+		<minEvictableIdleTimeMillis>1800000</minEvictableIdleTimeMillis>
+		<!-- 高并发numTestsPerEvictionRun=maxIdle -->
+		<numTestsPerEvictionRun>500</numTestsPerEvictionRun>
+		<showSql>true</showSql>
+	</dataSource>
+	
+	<dataSource name="sim" type="org.uyi.h.dao.pool.DbcpConnectionPool">
+		<dirverClassName>com.mysql.jdbc.Driver</dirverClassName>
+		<url>
+			jdbc:mysql://127.0.0.1:3306/sim3?useUnicode=true&amp;characterEncoding=UTF-8
+		</url>
+		<username>root</username>
+		<password>123456</password>
+		<initialSize>2</initialSize>
+		<maxActive>20</maxActive>
+		<maxWait>3000</maxWait>
+		<testWhileIdle>true</testWhileIdle>
+		<timeBetweenEvictionRunsMillis>3600000</timeBetweenEvictionRunsMillis>
+		<minEvictableIdleTimeMillis>1800000</minEvictableIdleTimeMillis>
+		<numTestsPerEvictionRun>20</numTestsPerEvictionRun>
+		<showSql>true</showSql>
+	</dataSource>
+	
+	<dataSource name="ZNHGLXT" type="org.uyi.h.dao.pool.DbcpConnectionPool">
+		<dirverClassName>
+			oracle.jdbc.driver.OracleDriver
+		</dirverClassName>
+		<url>jdbc:oracle:thin:@192.168.3.52:1521:mbophz</url>
+		<!-- <url>jdbc:oracle:thin:@60.12.160.242:90:mbophz</url> -->
+		<username>ZNHGLXT</username>
+		<password>znhglxt123</password>
+		<initialSize>1</initialSize>
+		<!-- 高并发maxActive=maxIdle=20 -->
+		<maxActive>20</maxActive>
+		<maxIdle>20</maxIdle>
+		<!-- 高并发此处配置和minIdle=initialSize -->
+		<minIdle>1</minIdle>
+		<maxWait>30000</maxWait>
+		<testWhileIdle>true</testWhileIdle>
+		<timeBetweenEvictionRunsMillis>360000</timeBetweenEvictionRunsMillis>
+		<minEvictableIdleTimeMillis>1800000</minEvictableIdleTimeMillis>
+		<!-- 高并发numTestsPerEvictionRun=maxIdle -->
+		<numTestsPerEvictionRun>20</numTestsPerEvictionRun>
+		<showSql>true</showSql>
+	</dataSource>
+
+	<dataSource name="SWJ2" type="org.uyi.h.dao.pool.DbcpConnectionPool">
+		<dirverClassName>
+			oracle.jdbc.driver.OracleDriver
+		</dirverClassName>
+		<url>jdbc:oracle:thin:@192.168.3.51:1521:MBOPHZ</url>
+		<username>swj2</username>
+		<password>654321</password>
+		<initialSize>10</initialSize>
+		<maxActive>500</maxActive>
+		<maxWait>1000</maxWait>
+		<showSql>true</showSql>
+	</dataSource>
+	
+	<dataSource name="c3p0" type="org.uyi.h.dao.pool.C3p0ConnectionPool">
+		<dirverClassName>com.mysql.jdbc.Driver</dirverClassName>
+		<url>
+			jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=UTF-8
+		</url>
+		<username>root</username>
+		<password>123456</password>
+		<initialSize>1</initialSize>
+		<minPoolSize>20</minPoolSize>
+		<maxPoolSize>500</maxPoolSize>
+		<acquireIncrement>10</acquireIncrement>
+		<idleTestPeriod>1000</idleTestPeriod>
+		<connectionOnCheckout>true</connectionOnCheckout>
+		<showSql>true</showSql>
+	</dataSource>
+	
+	<dataSource name="test" type="org.uyi.h.dao.pool.DbcpConnectionPool">
+		<dirverClassName>com.mysql.jdbc.Driver</dirverClassName>
+		<url>
+			jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=UTF-8
+		</url>
+		<username>root</username>
+		<password>123456</password>
+		<initialSize>1</initialSize>
+		<!-- 高并发maxActive=maxIdle=20 -->
+		<maxActive>500</maxActive>
+		<maxIdle>500</maxIdle>
+		<!-- 高并发此处配置和minIdle=initialSize -->
+		<minIdle>1</minIdle>
+		<maxWait>30000</maxWait>
+		<testWhileIdle>true</testWhileIdle>
+		<timeBetweenEvictionRunsMillis>360000</timeBetweenEvictionRunsMillis>
+		<minEvictableIdleTimeMillis>1800000</minEvictableIdleTimeMillis>
+		<!-- 高并发numTestsPerEvictionRun=maxIdle -->
+		<numTestsPerEvictionRun>500</numTestsPerEvictionRun>
+		<showSql>true</showSql>
+	</dataSource>
+
+	<dataSource name="oracle166">
+		<dirverClassName>
+			oracle.jdbc.driver.OracleDriver
+		</dirverClassName>
+		<url>jdbc:oracle:thin:@127.0.0.1:1521:orcl</url>
+		<username>cmpp</username>
+		<password>cmpp</password>
+		<initialSize>10</initialSize>
+		<maxActive>30000</maxActive>
+		<maxWait>1500</maxWait>
+		<showSql>true</showSql>
+	</dataSource>
+
+	<dataSource name="sqlserver" type="org.uyi.h.dao.pool.DbcpConnectionPool">
+		<classForName>
+			com.microsoft.sqlserver.jdbc.SQLServerDriver
+		</classForName>
+		<url>jdbc:sqlserver://localhost:1433;DatabaseName=master</url>
+		<userName>sa</userName>
+		<password />
+		<innitConCount>10</innitConCount>
+		<maxConCount>120</maxConCount>
+		<maxwaitingTime>1500</maxwaitingTime>
+	</dataSource>
+
+<dataSource name="mysql_" type="org.uyi.h.dao.pool.DbcpConnectionPool">
+		<dirverClassName>com.mysql.jdbc.Driver</dirverClassName>
+		<url>
+			jdbc:mysql://192.168.2.50:3306/rl?useUnicode=true&amp;characterEncoding=UTF-8
+		</url>
+		<username>0807g</username>
+		<password><!--20111222-->able@mysql.50</password>
+		<initialSize>5</initialSize>
+		<maxActive>1024</maxActive>
+		<maxIdle>50</maxIdle>
+		<minIdle>5</minIdle>
+		<maxWait>10000</maxWait>
+		<testWhileIdle>true</testWhileIdle>
+		<timeBetweenEvictionRunsMillis>3600000</timeBetweenEvictionRunsMillis>
+		<minEvictableIdleTimeMillis>1800000</minEvictableIdleTimeMillis>
+		<numTestsPerEvictionRun>50</numTestsPerEvictionRun>
+		<showSql>true</showSql>
+	</dataSource>
+	
+	<dataSource name="XSC_" type="org.uyi.h.dao.pool.DbcpConnectionPool">
+		<dirverClassName>
+			oracle.jdbc.driver.OracleDriver
+		</dirverClassName>
+		<url>jdbc:oracle:thin:@122.224.183.70:1521:orcl</url>
+		<username>xsc</username>
+		<password>xscsms$$69</password>
+		<initialSize>1</initialSize>
+		<maxActive>500</maxActive>
+		<maxWait>1000</maxWait>
+		<testWhileIdle>true</testWhileIdle>
+		<timeBetweenEvictionRunsMillis>3600000</timeBetweenEvictionRunsMillis>
+		<minEvictableIdleTimeMillis>1800000</minEvictableIdleTimeMillis>
+		<numTestsPerEvictionRun>50</numTestsPerEvictionRun>
+		<showSql>true</showSql>
+	</dataSource>
+	
+	<dataSource name="XSC" type="org.uyi.h.dao.pool.DbcpConnectionPool">
+		<dirverClassName>
+			oracle.jdbc.driver.OracleDriver
+		</dirverClassName>
+		<url>jdbc:oracle:thin:@115.159.210.69:1521:sms</url>
+		<username>xsc</username>
+		<password>xscsms$$89</password>
+		<initialSize>1</initialSize>
+		<!-- 高并发maxActive=maxIdle -->
+		<maxActive>20</maxActive>
+		<maxIdle>20</maxIdle>
+		<!-- 高并发此处配置和minIdle=initialSize -->
+		<minIdle>0</minIdle>
+		<maxWait>1000</maxWait>
+		<testWhileIdle>true</testWhileIdle>
+		<timeBetweenEvictionRunsMillis>360000</timeBetweenEvictionRunsMillis>
+		<minEvictableIdleTimeMillis>1800000</minEvictableIdleTimeMillis>
+		<!-- 高并发numTestsPerEvictionRun=maxIdle -->
+		<numTestsPerEvictionRun>20</numTestsPerEvictionRun>
+		<showSql>true</showSql>
+	</dataSource>
+	
+	<dataSource name="XSC_c3p0" type="org.uyi.h.dao.pool.C3p0ConnectionPool">
+		<dirverClassName>
+			oracle.jdbc.driver.OracleDriver
+		</dirverClassName>
+		<url>jdbc:oracle:thin:@115.159.210.69:1521:sms</url>
+		<username>xsc</username>
+		<password>xscsms$$89</password>
+		<initialSize>20</initialSize>
+		<minPoolSize>20</minPoolSize>
+		<maxPoolSize>50</maxPoolSize>
+		<acquireIncrement>10</acquireIncrement>
+		<idleTestPeriod>1000</idleTestPeriod>
+		<connectionOnCheckout>true</connectionOnCheckout>
+		<showSql>true</showSql>
+	</dataSource>
+	
+	
+	<dataSource name="grabage" type="org.uyi.h.dao.pool.DbcpConnectionPool">
+		<dirverClassName>com.mysql.jdbc.Driver</dirverClassName>
+		<url>
+			jdbc:mysql://192.168.3.52:3306/grabage?useUnicode=true&amp;characterEncoding=UTF-8
+		</url>
+		<username>root</username>
+		<password>123456</password>
+		<initialSize>1</initialSize>
+		<!-- 高并发maxActive=maxIdle=20 -->
+		<maxActive>500</maxActive>
+		<maxIdle>500</maxIdle>
+		<!-- 高并发此处配置和minIdle=initialSize -->
+		<minIdle>1</minIdle>
+		<maxWait>30000</maxWait>
+		<testWhileIdle>true</testWhileIdle>
+		<timeBetweenEvictionRunsMillis>360000</timeBetweenEvictionRunsMillis>
+		<minEvictableIdleTimeMillis>1800000</minEvictableIdleTimeMillis>
+		<!-- 高并发numTestsPerEvictionRun=maxIdle -->
+		<numTestsPerEvictionRun>500</numTestsPerEvictionRun>
+		<showSql>true</showSql>
+	</dataSource>
+</pool>
