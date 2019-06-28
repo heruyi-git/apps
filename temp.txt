@@ -1,0 +1,271 @@
+/*
+SQLyog 企业版 - MySQL GUI v8.14 
+MySQL - 5.0.67-community-nt : Database - erp
+*********************************************************************
+*/
+
+
+/*!40101 SET NAMES utf8 */;
+
+/*!40101 SET SQL_MODE=''*/;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`erp` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+USE `erp`;
+
+/*Table structure for table `common_data_permission_group` */
+
+DROP TABLE IF EXISTS `common_data_permission_group`;
+
+CREATE TABLE `common_data_permission_group` (
+  `id` int(11) NOT NULL auto_increment,
+  `group_name` varchar(20) NOT NULL COMMENT '权限组名',
+  `group_desc` varchar(200) NOT NULL COMMENT '组描述',
+  `state` int(11) NOT NULL default '1' COMMENT '状态',
+  `add_time` datetime NOT NULL COMMENT '添加时间',
+  `add_user_real_name` varchar(20) NOT NULL COMMENT '添加人姓名',
+  `permission_switch` int(11) NOT NULL COMMENT '权限开关',
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+/*Data for the table `common_data_permission_group` */
+
+insert  into `common_data_permission_group`(`id`,`group_name`,`group_desc`,`state`,`add_time`,`add_user_real_name`,`permission_switch`) values (1,'测试组1','测试描述1',1,'2019-01-01 00:00:00','张三',2),(2,'ad信息','Duis et reprehenderit',1,'0000-00-00 00:00:00','哦哦我',4),(3,'et Ut cupidatat','ut a',1,'0000-00-00 00:00:00','问问',3),(4,'打算','的',1,'2019-06-23 00:47:17','admin',7),(5,'嘻嘻1','新增测试1组',1,'2019-06-23 13:41:00','admin',3);
+
+/*Table structure for table `common_data_permission_group_mapping` */
+
+DROP TABLE IF EXISTS `common_data_permission_group_mapping`;
+
+CREATE TABLE `common_data_permission_group_mapping` (
+  `id` int(11) NOT NULL auto_increment COMMENT '编号',
+  `group_id` int(11) default NULL COMMENT '权限组编号',
+  `permission_type` int(11) default NULL COMMENT '权限类型',
+  `data_code` varchar(20) default NULL COMMENT '数据编码',
+  `data_name` varchar(30) default NULL COMMENT '数据名称',
+  `data_relation_name` varchar(20) default NULL COMMENT '数据关联名称',
+  `add_time` datetime default NULL COMMENT '映射时间',
+  PRIMARY KEY  (`id`),
+  UNIQUE KEY `group_id` (`group_id`,`permission_type`,`data_code`)
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
+
+/*Data for the table `common_data_permission_group_mapping` */
+
+insert  into `common_data_permission_group_mapping`(`id`,`group_id`,`permission_type`,`data_code`,`data_name`,`data_relation_name`,`add_time`) values (2,2,1,'5','amazon-au','test','2019-10-10 00:00:00'),(6,2,4,'91-CQC201P15WC0-BK',NULL,NULL,'2019-06-25 18:26:47'),(7,1,1,'5','amazon-au','test','2019-06-25 18:26:47'),(12,2,2,'16','IN_FBA','test2','2019-06-26 09:32:17'),(13,2,2,'17','EU_FBA','test2','2019-06-26 09:32:17'),(19,1,2,'15','US_FBA','test1','2019-06-26 11:21:16'),(20,1,2,'13','JP_FBA','test1','2019-06-26 11:21:16'),(22,1,4,'11-FBCH2RWRB12PL-BK',NULL,NULL,'2019-06-26 11:21:29'),(26,2,1,'1','amazon-us','test','2019-06-26 11:21:29'),(27,1,1,'6','amazon-jp','test1','2019-06-26 11:21:29');
+
+/*Table structure for table `common_data_permission_group_user_mapping` */
+
+DROP TABLE IF EXISTS `common_data_permission_group_user_mapping`;
+
+CREATE TABLE `common_data_permission_group_user_mapping` (
+  `id` int(11) NOT NULL auto_increment,
+  `user_id` int(11) default NULL COMMENT '用户编号',
+  `group_id` int(11) default NULL COMMENT '权限组编号',
+  `add_time` datetime default NULL COMMENT '映射时间',
+  PRIMARY KEY  (`id`),
+  UNIQUE KEY `user_id` (`user_id`,`group_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+
+/*Data for the table `common_data_permission_group_user_mapping` */
+
+insert  into `common_data_permission_group_user_mapping`(`id`,`user_id`,`group_id`,`add_time`) values (1,1,1,'2019-12-19 00:00:00'),(5,3,2,NULL),(6,3,5,NULL),(18,41,4,NULL),(19,3,1,NULL);
+
+/*Table structure for table `organization` */
+
+DROP TABLE IF EXISTS `organization`;
+
+CREATE TABLE `organization` (
+  `id` bigint(19) NOT NULL auto_increment,
+  `name` varchar(64) NOT NULL,
+  `address` varchar(100) default NULL,
+  `code` varchar(64) NOT NULL,
+  `icon` varchar(32) default NULL,
+  `pid` bigint(19) default NULL,
+  `seq` tinyint(2) NOT NULL default '0',
+  `createdate` datetime NOT NULL,
+  `status` tinyint(4) default '1' COMMENT '状态',
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COMMENT='组织机构';
+
+/*Data for the table `organization` */
+
+insert  into `organization`(`id`,`name`,`address`,`code`,`icon`,`pid`,`seq`,`createdate`,`status`) values (1,'总公司','','01','icon-company',NULL,0,'2019-06-22 12:50:11',1),(2,'财务部','','0101','icon-folder',1,0,'2019-06-27 13:30:02',1),(3,'深圳财务','','010101','icon-folder',2,0,'2019-06-22 14:18:58',1),(4,'长沙财务','','010102','icon-folder',2,0,'2019-06-22 14:19:04',1),(6,'长沙财务一部','1231312','01010201','icon-folder',4,0,'2019-06-27 20:00:34',0),(7,'深圳财务一部','长沙','02','icon-folder',3,0,'2019-06-27 20:18:56',1);
+
+/*Table structure for table `user` */
+
+DROP TABLE IF EXISTS `user`;
+
+CREATE TABLE `user` (
+  `id` bigint(19) NOT NULL auto_increment,
+  `loginname` varchar(64) NOT NULL,
+  `name` varchar(64) NOT NULL,
+  `is_charge` tinyint(2) NOT NULL default '0' COMMENT '是否为主管',
+  `password` varchar(64) NOT NULL,
+  `sex` tinyint(2) NOT NULL default '0',
+  `age` tinyint(2) default '0',
+  `usertype` tinyint(2) NOT NULL default '0',
+  `status` tinyint(2) NOT NULL default '1',
+  `organization_id` int(11) NOT NULL default '0',
+  `job_id` int(11) default NULL,
+  `createdate` datetime NOT NULL,
+  `phone` varchar(20) default NULL,
+  `email` varchar(64) default '',
+  `dingtalk_user_id` varchar(90) default '',
+  `password_scre_code` varchar(64) default NULL,
+  `password_code_time` datetime default NULL,
+  `hidden` tinyint(1) default '0',
+  `ips` varchar(255) default '' COMMENT '限制用户只能在设置的ip上登录',
+  `ip_state` tinyint(2) NOT NULL default '0' COMMENT '是否开启ip限制，默认不开启，0：不开启 1：开启',
+  `ext1` varchar(60) default '',
+  `ext2` varchar(60) default '',
+  `ext3` varchar(60) default '',
+  PRIMARY KEY  (`id`),
+  UNIQUE KEY `udx_loginname` (`loginname`),
+  UNIQUE KEY `udx_username` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8 COMMENT='用户';
+
+/*Data for the table `user` */
+
+insert  into `user`(`id`,`loginname`,`name`,`is_charge`,`password`,`sex`,`age`,`usertype`,`status`,`organization_id`,`job_id`,`createdate`,`phone`,`email`,`dingtalk_user_id`,`password_scre_code`,`password_code_time`,`hidden`,`ips`,`ip_state`,`ext1`,`ext2`,`ext3`) values (1,'admin','admin',0,'e10adc3949ba59abbe56e057f20f883e',0,25,1,1,11,NULL,'2018-10-25 18:24:20','18000001111','','',NULL,NULL,1,'192.168.8.180,192.168.8.186,192.168.8.187',0,'','',''),(3,'test2-1','test1',1,'25de8cd0b0cf69c5b5bc19c8ee64adab',0,NULL,1,1,2,1,'2018-10-29 19:38:37','',NULL,'',NULL,NULL,0,'',1,NULL,NULL,NULL),(4,'test2-2','ray',0,'10ed1697617fe7758b4236d5b791286c',0,NULL,1,1,2,1,'2018-11-07 17:23:52','123',NULL,'123',NULL,NULL,0,'',1,NULL,NULL,NULL),(5,'ray1','ray1',0,'f4cc399f0effd13c888e310ea2cf5399',0,NULL,1,1,1,1,'2018-12-06 19:06:29','',NULL,'',NULL,NULL,0,'192.168.8.180,192.168.8.186,192.168.8.99',1,NULL,NULL,NULL),(6,'test','test',1,'fb469d7ef430b0baf0cab6c436e70375',1,49,1,1,1,1,'2018-12-10 13:55:57','',NULL,'',NULL,NULL,0,'',0,NULL,NULL,NULL),(10,'developer','developer',0,'e10adc3949ba59abbe56e057f20f883e',0,0,0,1,4,NULL,'2019-05-22 21:13:31',NULL,'','',NULL,NULL,1,'',0,'','',''),(14,'ls','李四',0,'e10adc3949ba59abbe56e057f20f883e',0,NULL,1,1,3,1,'2019-06-13 14:33:15','',NULL,'',NULL,NULL,0,'',0,NULL,NULL,NULL),(17,'cat','凯特',0,'e10adc3949ba59abbe56e057f20f883e',0,NULL,1,1,7,1,'2019-06-13 14:34:34','',NULL,'',NULL,NULL,0,'',0,NULL,NULL,NULL),(24,'www','啊啊',0,'e3ceb5881a0a1fdaad01296d7554868d',0,NULL,1,1,4,1,'2019-06-15 00:46:29','1521331',NULL,'',NULL,NULL,0,'',0,NULL,NULL,NULL),(32,'test1-2','test111',0,'e10adc3949ba59abbe56e057f20f883e',0,NULL,1,1,1,1,'2019-06-19 14:03:13','',NULL,'',NULL,NULL,0,'',0,NULL,NULL,NULL),(33,'tttt','tttt',0,'e10adc3949ba59abbe56e057f20f883e',0,NULL,1,1,4,6,'2019-06-26 15:02:36','',NULL,'',NULL,NULL,0,'',0,NULL,NULL,NULL),(34,'test3-2','AAAAAAAA',0,'e10adc3949ba59abbe56e057f20f883e',0,NULL,1,1,3,1,'2019-06-26 15:08:15','',NULL,'A',NULL,NULL,0,'198.653.265.236',1,NULL,NULL,NULL),(35,'test3-3','cc',0,'e10adc3949ba59abbe56e057f20f883e',0,NULL,1,0,3,5,'2019-06-26 15:12:38','',NULL,'cc',NULL,NULL,0,'192.32.162.45,195.32.46.45',1,NULL,NULL,NULL),(36,'test2-3','ddd',0,'e10adc3949ba59abbe56e057f20f883e',0,NULL,1,1,2,7,'2019-06-26 15:18:24','',NULL,'dd',NULL,NULL,0,'192.32.65.321,198.65.44.46,198.65.54.23',1,NULL,NULL,NULL),(37,'ee','ee',0,'e10adc3949ba59abbe56e057f20f883e',0,3,1,1,4,7,'2019-06-26 15:27:58','',NULL,'ee',NULL,NULL,0,'192.321.1212,198.55.465',1,NULL,NULL,NULL),(38,'test3-1','ff',1,'e10adc3949ba59abbe56e057f20f883e',0,NULL,1,1,3,6,'2019-06-26 15:32:50','',NULL,'ff',NULL,NULL,0,'192.168.23.45,192.654.63.258,195.564.456',1,NULL,NULL,NULL),(39,'test2-4','gg',0,'e10adc3949ba59abbe56e057f20f883e',0,NULL,1,1,2,2,'2019-06-26 16:20:08','',NULL,'gg',NULL,NULL,0,'',1,NULL,NULL,NULL),(40,'test4-1','xxx',0,'e10adc3949ba59abbe56e057f20f883e',0,NULL,1,0,7,1,'2019-06-26 18:41:43','',NULL,'',NULL,NULL,0,'',0,NULL,NULL,NULL),(41,'123','123',1,'b58c50e209762c24adb9f29daffe249c',0,NULL,0,1,1,6,'2019-06-26 21:09:42',NULL,NULL,NULL,NULL,NULL,0,'',0,NULL,NULL,NULL);
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+
+
+
+
+
+
+
+
+
+SELECT * FROM common_data_permission_group;
+SELECT * FROM common_data_permission_group_mapping;
+SELECT * FROM common_data_permission_group_user_mapping
+
+-- 组下资源SKU
+SELECT gmp.id,gmp.group_id AS groupId,gmp.permission_type AS permissionType,gmp.data_code AS dataCode,gmp.data_relation_name AS dataRelationName,gmp.add_time AS ADDTIME,
+p.product_type AS productType,p.small_Image_Url AS smallImageUrl,p.category,p.brand,p.name FROM common_data_permission_group_mapping gmp
+JOIN e_product p ON gmp.data_code=p.sku
+WHERE gmp.permission_type=4 AND gmp.group_id=1 AND p.product_type=0 AND p.category=91 AND p.brand='' AND p.name='QC2.0单口车充黑色';
+-- 组下资源产品
+
+
+
+-- 用户下站点
+SELECT g.id,gmp.id,ump.user_id AS userId,gmp.group_id AS groupId,gmp.data_code AS dataCode,gmp.data_name AS dataName,gmp.data_relation_name AS dataRelationName FROM common_data_permission_group_user_mapping ump
+JOIN common_data_permission_group_mapping gmp ON ump.group_id=gmp.group_id
+JOIN common_data_permission_group g ON g.id=ump.group_id AND g.state=1
+WHERE ump.user_id IN(1,3) AND !(g.permission_switch & gmp.permission_type) AND gmp.permission_type=1
+
+-- 用户下SKU
+SELECT g.group_name AS groupName,gmp.id,gmp.group_id AS groupId,gmp.permission_type AS permissionType,gmp.data_code AS dataCode,gmp.data_relation_name AS dataRelationName,gmp.add_time AS ADDTIME,
+p.product_type AS productType,p.small_Image_Url AS smallImageUrl,p.category,p.brand,p.name FROM common_data_permission_group_user_mapping ump
+JOIN common_data_permission_group_mapping gmp ON ump.group_id=gmp.group_id
+JOIN common_data_permission_group g ON g.id=ump.group_id
+JOIN e_product p ON gmp.data_code=p.sku
+WHERE gmp.permission_type=4 AND ump.user_id IN(1)
+
+-- 用户下的组
+SELECT ump.*,group_name,g.group_desc,g.state,g.add_user_real_name,permission_switch FROM common_data_permission_group_user_mapping ump,common_data_permission_group g WHERE ump.group_id=g.id AND user_id = 1;
+
+-- 组下的用户
+SELECT ump.*,u.loginname,u.name,u.phone,u.email,u.is_charge,u.status,u.organization_id,u.job_id,(SELECT NAME FROM job WHERE id=u.job_id) job_name,(SELECT NAME FROM organization WHERE id=u.organization_id) organization_name FROM common_data_permission_group_user_mapping ump,erp.user u WHERE ump.user_id=u.id AND group_id = 1
+
+-- 站点批量授权
+-- SELECT m.id,(select name from e_server where id=m.server_id) as serverName,m.name,
+SELECT m.id AS dataCode,s.name AS dataRelationName,m.name AS dataName,
+gmp.id,gmp.group_id AS groupId,gmp.add_time AS ADDTIME
+FROM e_market m
+JOIN e_server s ON m.server_id=s.id
+LEFT JOIN common_data_permission_group_mapping gmp ON gmp.data_code=m.id AND gmp.permission_type=1 AND gmp.group_id=1
+WHERE  m.server_id='1' AND gmp.id IS NULL
+
+-- 仓库批量授权
+SELECT m.id AS dataCode,s.name AS dataRelationName,m.name AS dataName,
+gmp.id,gmp.group_id AS groupId,gmp.add_time AS ADDTIME
+FROM e_warehouse m
+JOIN e_server s ON m.server_id=s.id
+LEFT JOIN common_data_permission_group_mapping gmp ON gmp.data_code=m.id AND gmp.permission_type=2 AND gmp.group_id=1
+WHERE  m.server_id='1' AND gmp.id IS NOT NULL
+
+-- 产品批量授权
+SELECT p.sku AS dataCode,p.product_type AS productType,p.small_Image_Url AS smallImageUrl,p.category,p.brand,p.name,
+gmp.id,gmp.group_id AS groupId,gmp.add_time AS ADDTIME
+FROM  e_product p
+LEFT JOIN common_data_permission_group_mapping gmp ON gmp.data_code=p.sku
+AND gmp.permission_type=4 AND gmp.group_id=1
+WHERE p.product_type=0 AND p.category=91 AND p.brand='' AND p.name='QC2.0单口车充黑色';
+
+
+-- begin
+SELECT u.id userId,u.is_charge ower,o.id departmentId FROM erp.user u,organization o WHERE u.organization_id=o.id AND o.id=4 AND u.id=6
+SELECT * FROM organization WHERE pid=2
+
+-- 用户列表下的（0x01类型）组开关为开的 (过滤状态禁用的?)
+SELECT g.id,permission_switch,ump.user_id userId,g.state FROM (
+	SELECT * FROM common_data_permission_group_user_mapping WHERE user_id IN( 1,3 )
+) ump RIGHT JOIN common_data_permission_group g ON ump.group_id=g.id AND (g.permission_switch & 1) WHERE state=1
+
+SELECT A.permission_switch FROM (
+SELECT DISTINCT g.id,g.permission_switch FROM common_data_permission_group g 
+JOIN common_data_permission_group_user_mapping ump ON ump.group_id=g.id AND g.state=1 WHERE  user_id IN( 1,3 )
+) A
+
+
+SELECT DISTINCT gmp.data_code AS dataCode,gmp.data_name AS dataName,gmp.data_relation_name AS dataRelationName FROM common_data_permission_group_user_mapping ump
+JOIN common_data_permission_group_mapping gmp ON ump.group_id=gmp.group_id
+JOIN common_data_permission_group g ON g.id=ump.group_id AND g.state=1
+WHERE ump.user_id IN(1,3) AND !(g.permission_switch & gmp.permission_type) AND gmp.permission_type=4
+
+SELECT 2&1 FROM DUAL;  data_relation_name
+
+-- 6下的所有用户
+SELECT id FROM USER u WHERE u.organization_id IN(
+SELECT DATA.id FROM(
+    SELECT
+        @ids AS _ids,
+        (   SELECT @ids := GROUP_CONCAT(id)
+            FROM organization
+            WHERE FIND_IN_SET(pid, @ids)
+        ) AS cids,
+        @l := @l+1 AS LEVEL
+    FROM organization,
+        (SELECT @ids := (SELECT organization_id FROM erp.user WHERE id=6), @l := 0 ) b
+    WHERE @ids IS NOT NULL
+) id, organization DATA
+WHERE FIND_IN_SET(DATA.id, _ids)
+ORDER BY LEVEL, id
+) 
+
+
+SELECT u2.* FROM USER AS u1 RIGHT JOIN 
+(
+	-- 根据用户获取部门下所有下级下用户  -- 过滤禁用部门,禁用用户,(非主管用户)禁用所有部门主管("不禁用下级主管->只禁用当前部门主管")  .(上级部门禁用->子部门禁用[如果子部门没有禁用会被级联到]),
+	SELECT u.id userId,u.is_charge ower,d.id departmentId,d.status departmentState FROM USER AS u JOIN
+	(
+	    SELECT tree.id,tree.status FROM(
+		SELECT
+		@ids AS _ids,
+		(   SELECT @ids := GROUP_CONCAT(id)
+		    FROM organization
+		    WHERE FIND_IN_SET(pid, @ids)
+		) AS cids
+		FROM organization,
+		(SELECT @ids := (SELECT organization_id FROM USER WHERE id=1)) b
+		WHERE @ids IS NOT NULL
+	    ) id, organization tree
+	    WHERE FIND_IN_SET(tree.id, _ids)
+	    ORDER BY id
+	)
+	d ON u.organization_id=d.id AND u.status=1 WHERE d.status=1     
+ ) AS u2  ON u1.id=u2.userId AND (u2.userId=1 OR u2.ower=0) WHERE u1.is_charge IS NOT NULL
+
+  
+   
